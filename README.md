@@ -27,13 +27,19 @@ The aim of this project is to extract data from a Terraform state file (`.tfstat
 
 ```sh
 python tfstate_excel_extractor.py --help
-python tfstate_excel_extractor.py --tfstate terraform.tfstate --include-data-sources
 
 ```
 
+## Example
+
+```sh
+python tfstate_excel_extractor.py --tfstate terraform.tfstate --include-data-sources --output terraform_state.xlsx
+```
+
 ## Options
---tfstate : The path to the .tfstate file (required).
---include-data-sources : Include data sources in the extraction (optional).
+`--tfstate` : The path to the `.tfstate` file (required).
+`--include-data-sources` : Include data sources in the extraction (optional).
+`--output` : Path to the output Excel file (optional, defaults to terraform_state.xlsx in the current directory).
 
 ## Project Structure
 ```
