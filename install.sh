@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Install the required Python libraries
-pip install -r requirements.txt
+pip3 install -r requirements.txt
